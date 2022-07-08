@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <h1>Book Library</h1>
+    </header>
+    <main class="library">
+
+        <div class="btn">
+        <button class="addBtn" id="addBtn">+</button>
+        </div>
+
+        <div class="book-grid" id="booksGrid">
+
+            <div class="book-card">
+                <p>Die Vier Versprechen</p>
+                <p>Don Miguel Ruiz</p>
+                <p>163 pages</p>
+                <div class="button-group">
+                    <button class="readBtn btn-light-red">Not read</button>
+                    <button class="removeBtn">Remove</button>
+                </div> 
+            </div>
+
+            <div class="book-card">
+                <p>Die Vier Versprechen</p>
+                <p>Don Miguel Ruiz</p>
+                <p>163 pages</p>
+                <div class="button-group">
+                    <button class="readBtn btn-light-red" id="readBtn">Not read</button>
+                    <button class="removeBtn" id="removeBtn">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popupForm">
+            <form class="add-book-form" id="addBookForm">
+                <h2>Add new book</h2>
+                <input class="input" id="title" placeholder="Title" required maxlength="100" type="text">
+                <p class="error-msg" id="errorMsg"></p>
+                <input class="input" id="author" placeholder="Author" required maxlength="100" type="text">
+                <input class="input" id="pages" placeholder="Pages" required maxlength="100" type="number">
+                <div class="is-read">
+                    <label for="isRead">Have you read it?</label>
+                    <input type="checkbox" class="checkbox" id="isRead">
+                </div>
+                <button class="submitBtn" id="" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
